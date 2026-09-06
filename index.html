@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoCondo - Residencial Horto Florestal II</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    .preserve-3d {
+      transform-style: preserve-3d;
+    }
+    .translate-z-30 {
+      transform: translateZ(30px);
+    }
+    .translate-z-50 {
+      transform: translateZ(50px);
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+ 
+  <header class="relative bg-slate-900 text-white py-16 px-4 text-center shadow-lg overflow-hidden bg-cover bg-center" style="background-image: url('assets/images/fachada.png');">
+   
+    <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-[2px]"></div>
+
+    <div class="max-w-4xl mx-auto relative z-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-emerald-600/90 rounded-full text-xs font-semibold text-white mb-4 border border-emerald-400/30 shadow-md">
+        <i class="fa-solid fa-leaf"></i> Residencial Sustentável • ODS 11 ONU
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white drop-shadow-md">
+        Residencial Horto Florestal II
+      </h1>
+      <p class="mt-3 text-emerald-100 text-sm sm:text-lg max-w-xl mx-auto font-medium drop-shadow">
+        Guia oficial de descarte consciente, horários de coleta e preservação comunitária.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-8 space-y-12 flex-grow w-full">
+
+    
+    <section>
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+        <i class="fa-regular fa-clock text-emerald-600"></i> Cronograma Oficial de Descarte
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Terça a Domingo -->
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-emerald-500">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-1 rounded">
+              Descarte Permitido
+            </span>
+            <i class="fa-solid fa-calendar-check text-emerald-500 text-xl"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mt-3">De Terça a Domingo</h3>
+          <p class="text-xs text-slate-500 font-medium mt-0.5">Lixo Comum (Orgânico) e Reciclável</p>
+          <div class="mt-3 p-3 bg-emerald-50/70 rounded-xl border border-emerald-100 text-sm text-emerald-900">
+            <strong>⏰ Horário Permitido:</strong> das <strong>08:00h às 20:00h</strong>.
+            <p class="text-xs text-slate-600 mt-1">Deposite os sacos devidamente lacrados nos seus respectivos recipientes.</p>
+          </div>
+        </div>
+
+      
+        <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-rose-500">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-2 py-1 rounded">
+              Dia da Coleta e Higienização
+            </span>
+            <i class="fa-solid fa-truck text-rose-500 text-xl"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800 mt-3">Segunda-feira</h3>
+          <p class="text-xs text-slate-500 font-medium mt-0.5">Recolhimento pelo Caminhão e Limpeza</p>
+          <div class="mt-3 p-3 bg-rose-50/70 rounded-xl border border-rose-100 text-sm text-rose-900">
+            <strong>🚫 Descarte Bloqueado:</strong>
+            <p class="text-xs text-slate-600 mt-1">
+              Dia de higienização das lixeiras e recolhimento geral. <strong>Não leve lixo neste dia</strong> para evitar acúmulo e desorganização.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section>
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-map-pin text-emerald-600"></i> Onde Jogar Cada Resíduo
+      </h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-slate-700 font-bold text-base mb-1">🗑️ Lixeira Comum / Orgânico</div>
+          <p class="text-slate-500 text-xs mb-2">Terça a Domingo (08h às 20h)</p>
+          <p class="text-slate-600">Restos de alimentos, papel engordurado, papel higiênico e fraldas descartáveis. <strong>Sempre bem amarrado.</strong></p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-emerald-700 font-bold text-base mb-1">♻️ Coleta Seletiva (Seco)</div>
+          <p class="text-slate-500 text-xs mb-2">Terça a Domingo (08h às 20h)</p>
+          <p class="text-slate-600">Papelão limpo, garrafas plásticas, latinhas e embalagens enxaguadas. <strong>Secos e compactados.</strong></p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-rose-700 font-bold text-base mb-1">⚠️ Descarte Especial</div>
+          <p class="text-slate-500 text-xs mb-2">Ponto de Coleta na Portaria</p>
+          <p class="text-slate-600">Pilhas, baterias, lâmpadas e óleo vegetal usado em garrafa PET fechada. <strong>Nunca misture com o lixo comum.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center mb-6">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-800">Por Um Horto Florestal II Mais Sustentável</h2>
+        <p class="text-sm text-slate-500">Benefícios diretos para a qualidade de vida e convivência no condomínio:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+            <i class="fa-solid fa-building-circle-check"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 text-base">Valorização Patrimonial</h3>
+          <p class="text-slate-600 text-xs mt-2">
+            Um condomínio limpo, sem mau cheiro e bem cuidado preserva o bem-estar e valoriza os imóveis.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 text-base">Economia em Manutenção</h3>
+          <p class="text-slate-600 text-xs mt-2">
+            Evita gastos desnecessários com caçambas extras, consertos e dedetizações de emergência.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mx-auto mb-3 text-xl">
+            <i class="fa-solid fa-people-carry-box"></i>
+          </div>
+          <h3 class="font-bold text-slate-800 text-base">Solidariedade & Cooperativas</h3>
+          <p class="text-slate-600 text-xs mt-2">
+            Materiais limpos facilitam a triagem e garantem renda para cooperativas de reciclagem da cidade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section>
+      <div class="text-center mb-6">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-800">O Impacto da Nossa Atitude</h2>
+        <p class="text-sm text-slate-500">A colaboração de cada residência reflete em todo o residencial.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+       
+        <div class="bg-rose-50/70 border border-rose-200 p-6 rounded-2xl shadow-sm space-y-4">
+          <div class="flex items-center gap-2 text-rose-700 font-bold text-lg">
+            <i class="fa-solid fa-triangle-exclamation text-xl"></i>
+            <h3>Se Não Respeitarmos as Regras:</h3>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i>
+              <span><strong>Mau cheiro e pragas:</strong> Descartar na segunda ou fora do horário atrai baratas, ratos e moscas.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i>
+              <span><strong>Contaminação de recicláveis:</strong> Uma única embalagem suja estraga fardos inteiros de papelão seco.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-xmark text-rose-500 mt-1"></i>
+              <span><strong>Risco aos colaboradores:</strong> Cacos de vidro e objetos cortantes soltos causam acidentes graves.</span>
+            </li>
+          </ul>
+        </div>
+
+      
+        <div class="bg-emerald-50/70 border border-emerald-200 p-6 rounded-2xl shadow-sm space-y-4">
+          <div class="flex items-center gap-2 text-emerald-800 font-bold text-lg">
+            <i class="fa-solid fa-seedling text-xl"></i>
+            <h3>Ao Seguir o Horário e Separar:</h3>
+          </div>
+          <ul class="space-y-3 text-sm text-slate-700">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+              <span><strong>Ambiente agradável:</strong> Residencial limpo, sem sacos rasgados ou líquidos escorrendo pelas vias.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+              <span><strong>Coleta ágil e segura:</strong> Na segunda-feira o caminhão recolhe tudo com máxima velocidade.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-circle-check text-emerald-600 mt-1"></i>
+              <span><strong>Sustentabilidade real:</strong> Menos volume de resíduos despejados em aterros da nossa região.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="text-center pt-4">
+      <div class="mb-4">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-800">Panfleto Digital Informativo</h2>
+        <p class="text-sm text-slate-500">Passe o mouse sobre a arte para ver o efeito 3D ou baixe para salvar no celular.</p>
+      </div>
+
+     
+      <div 
+        id="panfleto-card"
+        data-tilt 
+        data-tilt-max="10" 
+        data-tilt-speed="400" 
+        data-tilt-perspective="1000"
+        data-tilt-glare 
+        data-tilt-max-glare="0.15"
+        class="preserve-3d relative bg-white border border-slate-200 shadow-2xl rounded-3xl p-4 sm:p-6 max-w-sm sm:max-w-md mx-auto cursor-pointer transition-shadow"
+      >
+    
+        <div class="translate-z-30 rounded-2xl overflow-hidden shadow-md border border-slate-100">
+          <img 
+            id="panfleto-img"
+            src="assets/images/panfleto.png" 
+            alt="Panfleto Oficial de Descarte - Horto Florestal II" 
+            class="w-full h-auto object-cover rounded-xl pointer-events-none"
+          />
+        </div>
+
+        <div class="translate-z-50 mt-5 text-center space-y-2">
+          <p class="text-xs text-slate-500 font-medium">
+            Ideal para compartilhar nos grupos de WhatsApp dos moradores.
+          </p>
+
+       
+          <button 
+            type="button"
+            onclick="baixarDireto()" 
+            class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-semibold text-sm rounded-xl transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <i class="fa-solid fa-cloud-arrow-down text-base"></i> Baixar Imagem do Panfleto
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs mt-12 border-t border-slate-800">
+    <p class="font-semibold text-slate-300">Atividades de Extensão: Integração de Competências em Engenharia de Software IV</p>
+    <p class="mt-1">Aluno: Matheus Henrique dos Santos Nunes | RGM: 48819883</p>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+
+  <script>
+    function baixarDireto() {
+      const img = document.getElementById('panfleto-img');
+      const nomeArquivo = 'Panfleto-Descarte-Horto-Florestal-II.png';
+
+      const canvas = document.createElement('canvas');
+      canvas.width = img.naturalWidth || img.width;
+      canvas.height = img.naturalHeight || img.height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+
+      try {
+        const dataURL = canvas.toDataURL('image/png');
+        const link = document.createElement('a');
+        link.href = dataURL;
+        link.download = nomeArquivo;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (err) {
+        const link = document.createElement('a');
+        link.href = img.src;
+        link.setAttribute('download', nomeArquivo);
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    }
+  </script>
+</body>
+</html>
